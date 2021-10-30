@@ -7,10 +7,12 @@ body {
   display: flex;
   font-weight: 400;
   font-family: sans-serif;
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body, html, .App, #root, .outer {
@@ -18,15 +20,16 @@ body, html, .App, #root, .outer {
   height: 100%;
 }
 
-.form-group{
+.form-group {
   min-height: 50px;
   max-width: 440px;
 }
+
 .outer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-    text-align: left;
+  text-align: left;
 }
 
 .inner {
@@ -42,6 +45,7 @@ body, html, .App, #root, .outer {
   border-color: #167bff;
   box-shadow: none;
 }
+
 .outer .form-control {
   height: 36px;
   width: 348px;
@@ -49,8 +53,20 @@ body, html, .App, #root, .outer {
   border-right: 0 solid white;
   border-bottom: 1px solid rgb(122, 122, 122);
   border-left: 0 solid white;
-  
 }
+
+.outer .form-control-sub {
+  height: 36px;
+  width: 80px;
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 1px solid;
+  border-left: 0px solid;
+  max-width: 100%;
+  cursor: default;
+}
+
+
 
 .outer h2 {
   text-align: left;
@@ -59,11 +75,11 @@ body, html, .App, #root, .outer {
   padding-bottom: 20px;
 }
 
-.create_account{
+.create_account {
   font-size: 13px;
 }
 
-.sign_in{
+.sign_in {
   font-size: 20px;
   font-weight: 500;
 }
