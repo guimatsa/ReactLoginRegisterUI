@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/email.component";
 import Birthdate from './components/birthdate.component';
 import Email from './components/email.component';
-import Password from './components/password.component'
-import Name_Sname from './components/name_sname.component'
+import Password from './components/password.component';
+import Name_Sname from './components/name_sname.component';
+import Verify from './components/verify.component';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route exact path='/Password' component={Password} />
               <Route exact path='/Birthdate' component={Birthdate} />
               <Route exact path='/Name_Sname' component={Name_Sname} />
+              <Route exact path='/Verify' component={Verify} />
               
             </Switch>
           </div>

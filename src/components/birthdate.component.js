@@ -20,7 +20,8 @@ export default class Birthdate extends Component {
             <option value="3">Three</option>
           </select> <br />
           <label className="sign_in">Birthdate</label> <br />
-          <div className="testd d-inline p-1">
+          
+          <div className=" d-inline p-1">
           <select class="form-control-sub  position-relative" aria-label=".form-select-lg example">
             <option selected>Month</option>
             <option value="1">One</option>
@@ -28,7 +29,8 @@ export default class Birthdate extends Component {
             <option value="3">Three</option>
           </select>
           </div>
-          <div className="testd d-inline p-1">
+          
+          <div className=" d-inline p-1">
           <select class="form-control-sub  position-relative" aria-label=".form-select-lg example">
             <option selected>Day</option>
             <option value="1">One</option>
@@ -36,7 +38,8 @@ export default class Birthdate extends Component {
             <option value="3">Three</option>
           </select>
           </div>
-          <div className="testd d-inline p-1">
+          
+          <div className=" d-inline p-1">
           <select class="form-control-sub  position-relative" aria-label=".form-select-lg example">
             <option selected>Year</option>
             <option value="1">One</option>
