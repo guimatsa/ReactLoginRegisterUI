@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class SignIn extends Component {
+export default class Email extends Component {
     render() {
         return (
             <form>
