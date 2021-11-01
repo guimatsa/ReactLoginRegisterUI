@@ -9,6 +9,8 @@ import Password from './components/password.component';
 import Name_Sname from './components/name_sname.component';
 import Verify from './components/verify.component';
 import MasterForm from './components/steps.component';
+import MasterForm2 from './components/steps2.component';
+
 
 function App() {
   return (
@@ -23,8 +25,9 @@ function App() {
               <Route exact path='/Birthdate' component={Birthdate} />
               <Route exact path='/Name_Sname' component={Name_Sname} />
               <Route exact path='/Verify' component={Verify} />
-              
+    
               <Route exact path='/MasterForm' component={MasterForm} />
+              <Route exact path='/MasterForm2' component={MasterForm2} />
               
             </Switch>
           </div>

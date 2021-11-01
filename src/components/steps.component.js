@@ -63,7 +63,8 @@ class MasterForm extends React.Component {
         <button
           className="btn btn-secondary"
           type="button" onClick={this._prev}>
-          Previous
+
+          <i class="fas fa-arrow-left"></i>
         </button>
       )
     }
@@ -115,7 +116,6 @@ class MasterForm extends React.Component {
           <Step4
             currentStep={this.state.currentStep}
             handleChange={this.handleChange}
-            userSname={this.state.userSname}
             userCountry={this.state.userCountry}
             userDateOfBirth={this.state.userDateOfBirth}
           />
@@ -135,9 +135,16 @@ function Step1(props) {
   return (
     <form>
       <div className="form-group">
-        <p>  </p>
+
         <label htmlFor="email" className="sign_in">Create account</label>
-        <input type="email" id="email" name="email" className="form-control" placeholder="someone@example.com"  />
+        <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                className="form-control" 
+                placeholder="someone@example.com" 
+                value={props.email}
+                onChange={props.handleChange}/>
       </div>
       <div className="form-group">
         <p class="create_account"><Link> <a>Use a phone number instead</a> </Link> </p>
@@ -158,9 +165,13 @@ function Step2(props) {
         <label className="sign_in">Create a password</label>
         <p class="create_account"> Enter the password you would like to use with your account. </p>
         <input
-          type="password"
-          className="form-control"
-          placeholder="Create password"
+                type="password"
+                name="password"
+                id="password"
+                className="form-control"
+                placeholder="Create password"
+                value={props.password}
+                onChange={props.handleChange}
         />
       </div>
       <div className="form-group">
@@ -194,9 +205,23 @@ function Step3(props) {
         <p class="create_account "> User Email </p>
         <label className="sign_in">Info</label>
         <p class="create_account"> We need just a little more info to set up your account.</p>
-        <input type="text" className="form-control" placeholder="First name" />
+        <input 
+                name="userName"
+                id="userName"
+                type="text" 
+                className="form-control" 
+                placeholder="First name" 
+                value={props.userName}
+                onChange={props.handleChange}/>
 
-        <input type="text" className="form-control" placeholder="Last name" />
+        <input 
+        type="text" 
+        name="userSname"
+        id="userSname"
+        className="form-control" 
+        placeholder="Last name"
+        value={props.userSname}
+        onChange={props.handleChange} />
       </div>
     </React.Fragment>
   );
@@ -215,7 +240,7 @@ function Step4(props) {
 
         <label className="sign_in">Country/region</label> <br />
 
-        <select class="form-control" aria-label=".form-select-lg example">
+        <select class="form-control" id="userCountry" name="userCountry" aria-label=".form-select-lg example">
           <option selected>Select your country</option>
           <option value="1">One</option>
           <option value="2">Two</option>

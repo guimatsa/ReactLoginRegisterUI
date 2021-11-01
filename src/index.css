@@ -9,9 +9,9 @@ body {
   font-family: sans-serif;
   background: #12c2e9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: -webkit-linear-gradient(to right, #1444ac, #1444ac, #1444ac);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #1444ac65, #1444ac65, #1444ac65);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
