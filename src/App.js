@@ -8,6 +8,7 @@ import Email from './components/email.component';
 import Password from './components/password.component';
 import Name_Sname from './components/name_sname.component';
 import Verify from './components/verify.component';
+import MasterForm from './components/steps.component';
 
 function App() {
   return (
@@ -16,11 +17,14 @@ function App() {
         <div className="outer">
           <div className="inner">
             <Switch>
+              
               <Route exact path='/Email' component={Email} />
               <Route exact path='/Password' component={Password} />
               <Route exact path='/Birthdate' component={Birthdate} />
               <Route exact path='/Name_Sname' component={Name_Sname} />
               <Route exact path='/Verify' component={Verify} />
+              
+              <Route exact path='/MasterForm' component={MasterForm} />
               
             </Switch>
           </div>
