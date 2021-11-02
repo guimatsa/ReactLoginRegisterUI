@@ -7,11 +7,11 @@ body {
   display: flex;
   font-weight: 400;
   font-family: sans-serif;
-  background: #12c2e9;
+  background: #929292b0;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1444ac, #1444ac, #1444ac);
+  background: -webkit-linear-gradient(to right, #929292b0, #929292b0, #929292b0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1444ac65, #1444ac65, #1444ac65);
+  background: linear-gradient(to right, #929292b0, #929292b0, #929292b0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -89,3 +89,4 @@ body, html, .App, #root, .outer {
 .forgot-password a {
   color: #167bff;
 }
+

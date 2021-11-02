@@ -26,7 +26,7 @@ class MasterForm2 extends React.Component {
              Username: ${username} \n
              Password: ${password}`)
     }
-    
+
     _next = () => {
       let currentStep = this.state.currentStep
       currentStep = currentStep >= 2? 3: currentStep + 1
@@ -51,9 +51,9 @@ class MasterForm2 extends React.Component {
     if(currentStep !==1){
       return (
         <button 
-          className="btn btn-secondary" 
+          className="btn2 btn-secondary" 
           type="button" onClick={this._prev}>
-        Previous
+        prev
         </button>
       )
     }
@@ -66,7 +66,10 @@ class MasterForm2 extends React.Component {
       return (
         <button 
           className="btn btn-primary float-right" 
-          type="button" onClick={this._next}>
+          type="button" 
+          onClick={
+              this._next
+              } >
         Next
         </button>        
       )
@@ -77,8 +80,8 @@ class MasterForm2 extends React.Component {
     render() {    
       return (
         <React.Fragment>
-        <h1>React Wizard Form ✔</h1>
-        <p>Step {this.state.currentStep} </p> 
+        <h1>☠ Dr. Kramer</h1>
+         s = {this.state.email} 
   
         <form onSubmit={this.handleSubmit}>
         {/* 
@@ -123,6 +126,7 @@ class MasterForm2 extends React.Component {
           placeholder="Enter email"
           value={props.email}
           onChange={props.handleChange}
+          
           />
       </div>
     );
